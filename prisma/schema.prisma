@@ -22,7 +22,7 @@ model User {
   email          String     @unique
   mobile         String     @unique
   password       String
-  idUpload       String?
+  profile        String?
   role           Role       @default(TENANT)
   status         UserStatus @default(ACTIVE)
   lastLogin      DateTime?
